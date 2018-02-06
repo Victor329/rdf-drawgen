@@ -12,5 +12,62 @@
 	<packaging>jar</packaging>
 
 	<name>rdf-drawgen-core</name>
+	
+	<properties>
+		<rdf4j.version>2.2.4</rdf4j.version>
+	</properties>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>rdf-drawgen</groupId>
+			<artifactId>rdf-drawgen-model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>rdf-drawgen</groupId>
+			<artifactId>rdf-drawgen-drawio</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-model</artifactId>
+			<version>${rdf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-util</artifactId>
+			<version>${rdf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-rio-api</artifactId>
+			<version>${rdf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-rio-turtle</artifactId>
+			<version>${rdf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-rio-trig</artifactId>
+			<version>${rdf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
 
 </project>
